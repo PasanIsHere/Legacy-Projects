@@ -1,0 +1,143 @@
+V "GNAT Lib v8"
+M P W=b
+A -gnatwa
+A -Wall
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U hangman%b		hangman.adb		db839846 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.maps%s	a-strmap.adb		a-strmap.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+D ada.ads		20170911084841 76789da1 ada%s
+D a-charac.ads		20170908151217 2d3ec45b ada.characters%s
+D a-chlat1.ads		20170908151217 66457d31 ada.characters.latin_1%s
+D a-except.ads		20180111085525 291912d5 ada.exceptions%s
+D a-inteio.ads		20170908151217 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20170908151217 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20170908151217 bb51c45a ada.numerics%s
+D a-nudira.ads		20180111085525 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20180111085525 72908cdb ada.numerics.discrete_random%b
+D a-stream.ads		20180111085525 119b8fb3 ada.streams%s
+D a-string.ads		20170908151217 90ac6797 ada.strings%s
+D a-strmap.ads		20180111085525 e8bb714a ada.strings.maps%s
+D a-tags.ads		20180111085525 491b781d ada.tags%s
+D a-textio.ads		20180111085525 881db35a ada.text_io%s
+D a-tiinio.ads		20180111085525 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20170908151217 0e9b276f ada.unchecked_conversion%s
+D hangman.adb		20210316215919 3c8b8e1d hangman%b
+D interfac.ads		20180111085525 5ab55268 interfaces%s
+D i-cstrea.ads		20180111085525 e53d8b8e interfaces.c_streams%s
+D system.ads		20180111085525 4635ec04 system%s
+D s-conca2.ads		20180111085525 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20180111085525 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180111085525 54135002 system.exception_table%s
+D s-ficobl.ads		20180111085525 078245e4 system.file_control_block%s
+D s-imguns.ads		20180111085525 9ff43cf7 system.img_uns%s
+D s-parame.ads		20180111085525 f896c45c system.parameters%s
+D s-rannum.ads		20180111085525 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20180111085525 20ba1217 system.random_numbers%b
+D s-ransee.ads		20180111085525 01a57b33 system.random_seed%s
+D s-secsta.ads		20180111085525 283dec34 system.secondary_stack%s
+D s-soflin.ads		20180111085525 a7318a92 system.soft_links%s
+D s-stache.ads		20180111085525 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180111085525 09bd3940 system.standard_library%s
+D s-stoele.ads		20180111085525 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180111085525 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180111085525 34867c83 system.unsigned_types%s
+D s-valuns.ads		20180111085525 10a8ed3b system.val_uns%s
+D s-wchcon.ads		20180111085525 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 17|1r6 1r28 2r6 2r23 3r6 3r31 4r6 7r24
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[15|46] 17|3w10 3r35
+X 7 a-numeri.ads
+16K13*Numerics 32e17 17|4r10 7r28
+X 8 a-nudira.ads
+44k22*Discrete_Random 75e33 17|4w19 7r37
+50R9 Generator<27|63R9> 17|9r15[7]
+52V13 Random{17|6I10} 17|52s21[7]
+55U14 Reset<27|100p14> 17|46s5[7]
+X 9 a-nudira.adb
+53V16 Random[27|83]{17|6I10} 28|392b13[17|7]
+X 11 a-string.ads
+16K13*Strings 35e16 17|1r10 1r32
+X 12 a-strmap.ads
+38K21*Maps 411e21 17|1w18 1r40
+46A9*Character_Set<137A9>
+82V13*Is_In{boolean} 17|106s16 188s23
+98V13*To_Set{46A9} 17|106s37 188s34
+137A9 Character_Set_Internal(boolean)<character>
+X 14 a-textio.ads
+49K13*Text_IO 471e16 17|2w10 2r27
+169U14*Skip_Line 17|104s13
+206U14*Get 17|103s13 214s9
+208U14*Put 17|97s17 98s17
+242U14*Put 17|95s13 102s13 194s25
+249U14*Get_Line 17|191s21
+263U14*Put_Line 17|45s5 90s9 100s13 107s17 123s21 128s29 140s29 146s29 152s29
+. 158s29 162s29 166s29 169s29 172s29 176s29 177s29 186s25 189s21 190s21 196s25
+. 199s25 202s21 209s13 213s9 223s9 225s5 226s5
+X 15 a-tiinio.ads
+66U14*Put 17|195s25[5|18]
+X 17 hangman.adb
+5U11*Hangman 5b11 228l5 228t12
+6I10 wordRange<short_short_integer> 7r53 14r16 26r14 30r23 49r14 50r20 59r20
+. 85r20
+7K13 rnd[8|44] 8r9 9r11
+9r5 gen{8|50R9[7]} 46r11 52r28
+10a5 displayBoard(string) 72m9 74m13 75m13 77m9 129m29 130m29 131m29 132m29
+. 133m29 134m29 135m29 136m29 137m29 138m29 141m29 142m29 143m29 144m29 147m29
+. 148m29 149m29 150m29 153m29 154m29 155m29 156m29 159m29 160m29 163m29 164m29
+. 167m29 170m29 173m29 174m29 178m29 179m29 186r34
+11a5 guesses{string} 80m9 97r21 106r44 110m17
+12e5 letterGuessed{character} 103m17 106r22 110r40 114r34 115r38
+13e5 answer{character} 214m13 216r12
+14i5 rndIndex{6I10} 52m9 53r40
+15a5 word{string} 62m9 66r15 86m9 114r24 193r29 209r57
+16i5 wordLen{integer} 61m9 67m17 67r28 87r22 113r29 192r24 193r37 209r65
+17a5 userGuess{string} 191m30 193r48
+18i5 userGuessLen{integer} 191m41 192r34 193r61
+19a5 hidden{string} 81m9 90r18 115m25 188r41 189r30
+20i5 hiddenLen{integer} 87m9 90r28 188r51 189r40
+21i5 numGuesses{integer} 78m9 96r25 109m17 109r31 110r25 195r29
+22i5 numWrongGuesses{integer} 79m9 92r15 122m21 122r40 126r26 208r12
+23i5 numReplacedLetters{integer} 112m17 116m25 116r47 121r20
+24i5 count{integer} 56m5 58r11 59r31 85r30 219m9 219r18 222r8
+25i5 tempInt{integer} 60m9
+26i5 tempNum{6I10} 50m9 51r31 53r19 59m9 62r27 85m9 86r27
+27a5 tempWord{string} 51m9
+30a5 wordArray(string) 51r21 53m9 53r30 62r17 86r17
+49i9 i{6I10} 50r31
+65i13 i{integer} 66r20
+73i13 i{integer} 74r26 75r26
+96i17 i{integer} 97r29
+113i21 i{integer} 114r29 115r32
+185i25 i{integer} 186r47
+X 18 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 27 s-rannum.ads
+75V13*Random{18|74M9} 28|221i21
+76V13*Random{18|77M9} 28|221i21
+
